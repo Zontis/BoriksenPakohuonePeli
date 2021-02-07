@@ -42,9 +42,12 @@ public class Inventory : MonoBehaviour
     }
     public void PrintInventory()          //for debugging
     {
+        int j = 0;
         foreach (string i in items)
         {
-            Debug.Log("Item: " + i);
+            
+            Debug.Log( "Item " + j + " is " + i);
+            j++;
         }
     }
 }
